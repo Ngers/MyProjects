@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="cbd6fdcf-5fc2-4865-8c21-708dbd34f00a" name="UMLClassDiagram1" linkedPackageId="1786295e-1a84-4f46-af64-4fef57e77c4a" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="c3f7dd7d-bfd7-4abe-95c8-b172c7e3b9e9">
+      <profileInstance Id="cfaa093c-4c3d-4089-8a4c-d17fdba49479" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="2502bac6-8973-4272-ad27-c87c16e14491">
+      <profileInstance Id="7d165f58-7cff-439e-9878-84c4e515a27a" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="dd049d4c-e6e1-4af2-8c14-30ec2009a184" name="AbstractFactoryBoard" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="660c569f-619f-4ec3-ba3e-74836aa20271" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="ee42de8d-a148-48c1-83eb-34cd3331b3ff" name="AbstractProductBusDriver" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="5c282797-e259-456f-87de-703663640bd4" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="1b85d007-ac06-41ee-a6ef-4878e3ccc538" name="ConcreteFactoryBusBoard" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="abf88a1d-43d5-4d63-b0e9-c2df8fc44446" />
+        <suppliersInternal>
+          <dependency Id="08428dd6-a393-4ac3-8a47-a4e1171884a4">
+            <classMoniker Id="1ce492cf-0a7a-42f2-856d-745b2506c32c" LastKnownName="Passenger" />
+            <elementDefinition Id="fafcabf5-98c3-4b95-9230-707ce20f6ab9" />
+          </dependency>
+          <dependency Id="73a56104-298e-4e14-86cd-f8e6fb2e8f98">
+            <classMoniker Id="0e3f0719-7080-4d02-8bec-29b350807384" LastKnownName="ConcreteProductBusDriver" />
+            <elementDefinition Id="4597abba-113a-4a6e-b5e6-7a0cba0a9b8f" />
+          </dependency>
+        </suppliersInternal>
+        <generalsInternal>
+          <generalization Id="3bd21639-cf2f-4461-8f1b-1ad5bb045f09" isSubstitutable="false">
+            <classMoniker Id="dd049d4c-e6e1-4af2-8c14-30ec2009a184" LastKnownName="AbstractFactoryBoard" />
+            <elementDefinition Id="672578de-85c7-4822-b1e3-e10c9d7420b4" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="9e21b7f1-5f96-4a8b-940b-b7b6a92437a5" name="ConcreteFactoryTaxi board" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="fb967004-b7b7-44fc-8c80-9e3606da3067" />
+        <suppliersInternal>
+          <dependency Id="dcbf8267-e685-42a1-9e9e-0604d1d63934">
+            <classMoniker Id="1ce492cf-0a7a-42f2-856d-745b2506c32c" LastKnownName="Passenger" />
+            <elementDefinition Id="1d542539-6166-4084-9154-65f80c84fb93" />
+          </dependency>
+          <dependency Id="f63fa30f-2d80-4989-9d09-a288a81134ae">
+            <classMoniker Id="c43aca0b-37f5-45ee-8a4a-3ac1fd0f4dee" LastKnownName="ConcreteProductTaxiDriver" />
+            <elementDefinition Id="529d49b0-fb0f-48fe-a1fd-a50dae256089" />
+          </dependency>
+        </suppliersInternal>
+        <generalsInternal>
+          <generalization Id="8086ce89-402e-4da3-b3f4-06569c0d9a33" isSubstitutable="false">
+            <classMoniker Id="dd049d4c-e6e1-4af2-8c14-30ec2009a184" LastKnownName="AbstractFactoryBoard" />
+            <elementDefinition Id="9f433eb4-22a8-4b8a-8d40-08cfbea73dd6" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="c43aca0b-37f5-45ee-8a4a-3ac1fd0f4dee" name="ConcreteProductTaxiDriver" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="6163d3d1-3682-4760-a0cb-6d450065c175" />
+        <generalsInternal>
+          <generalization Id="dbb71ffe-07f1-4f19-b64f-9f1fa8cd2ad7" isSubstitutable="false">
+            <classMoniker Id="ee42de8d-a148-48c1-83eb-34cd3331b3ff" LastKnownName="AbstractProductBusDriver" />
+            <elementDefinition Id="f1f4effa-f680-403b-8a2b-2a33ad631d53" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="0e3f0719-7080-4d02-8bec-29b350807384" name="ConcreteProductBusDriver" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="d1aaa749-07ba-41fc-bf93-89a1234273c5" />
+        <generalsInternal>
+          <generalization Id="cc591725-5071-4dbf-b694-54e970f0fc66" isSubstitutable="false">
+            <classMoniker Id="ee42de8d-a148-48c1-83eb-34cd3331b3ff" LastKnownName="AbstractProductBusDriver" />
+            <elementDefinition Id="f6f3ff1d-3c75-4abc-a391-5f59a52f539a" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="1ce492cf-0a7a-42f2-856d-745b2506c32c" name="Passenger" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="a02024d4-e03a-4867-baa0-29ab9d1de708" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="1786295e-1a84-4f46-af64-4fef57e77c4a" name="Modelinglaba2">
+    <elementDefinition Id="3d3768bc-ad1c-4d90-aaf6-4ea4478e3ebe" />
+  </package>
+</logicalClassDesignerModel>

@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="3d3768bc-ad1c-4d90-aaf6-4ea4478e3ebe"
+  name="Modelinglaba2" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="692d7451-209e-490a-b071-2bbc0cc8e2b5"
+        name="Class1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="660c569f-619f-4ec3-ba3e-74836aa20271"
+        name="AbstractFactoryBoard"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="5c282797-e259-456f-87de-703663640bd4"
+        name="AbstractProductBusDriver"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="abf88a1d-43d5-4d63-b0e9-c2df8fc44446"
+        name="ConcreteFactoryBusBoard"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="fafcabf5-98c3-4b95-9230-707ce20f6ab9">
+            <classMoniker
+              Id="a02024d4-e03a-4867-baa0-29ab9d1de708"
+              LastKnownName="Passenger"
+              LastKnownLocation="Modelinglaba2.uml" />
+          </dependency>
+          <dependency
+            Id="4597abba-113a-4a6e-b5e6-7a0cba0a9b8f">
+            <classMoniker
+              Id="d1aaa749-07ba-41fc-bf93-89a1234273c5"
+              LastKnownName="ConcreteProductBusDriver"
+              LastKnownLocation="Modelinglaba2.uml" />
+          </dependency>
+        </suppliersInternal>
+        <generalsInternal>
+          <generalization
+            Id="672578de-85c7-4822-b1e3-e10c9d7420b4"
+            isSubstitutable="false">
+            <classMoniker
+              Id="660c569f-619f-4ec3-ba3e-74836aa20271"
+              LastKnownName="AbstractFactoryBoard"
+              LastKnownLocation="Modelinglaba2.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="fb967004-b7b7-44fc-8c80-9e3606da3067"
+        name="ConcreteFactoryTaxi board"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="1d542539-6166-4084-9154-65f80c84fb93">
+            <classMoniker
+              Id="a02024d4-e03a-4867-baa0-29ab9d1de708"
+              LastKnownName="Passenger"
+              LastKnownLocation="Modelinglaba2.uml" />
+          </dependency>
+          <dependency
+            Id="529d49b0-fb0f-48fe-a1fd-a50dae256089">
+            <classMoniker
+              Id="6163d3d1-3682-4760-a0cb-6d450065c175"
+              LastKnownName="ConcreteProductTaxiDriver"
+              LastKnownLocation="Modelinglaba2.uml" />
+          </dependency>
+        </suppliersInternal>
+        <generalsInternal>
+          <generalization
+            Id="9f433eb4-22a8-4b8a-8d40-08cfbea73dd6"
+            isSubstitutable="false">
+            <classMoniker
+              Id="660c569f-619f-4ec3-ba3e-74836aa20271"
+              LastKnownName="AbstractFactoryBoard"
+              LastKnownLocation="Modelinglaba2.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="6163d3d1-3682-4760-a0cb-6d450065c175"
+        name="ConcreteProductTaxiDriver"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="f1f4effa-f680-403b-8a2b-2a33ad631d53"
+            isSubstitutable="false">
+            <classMoniker
+              Id="5c282797-e259-456f-87de-703663640bd4"
+              LastKnownName="AbstractProductBusDriver"
+              LastKnownLocation="Modelinglaba2.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="d1aaa749-07ba-41fc-bf93-89a1234273c5"
+        name="ConcreteProductBusDriver"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="f6f3ff1d-3c75-4abc-a391-5f59a52f539a"
+            isSubstitutable="false">
+            <classMoniker
+              Id="5c282797-e259-456f-87de-703663640bd4"
+              LastKnownName="AbstractProductBusDriver"
+              LastKnownLocation="Modelinglaba2.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="a02024d4-e03a-4867-baa0-29ab9d1de708"
+        name="Passenger"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>
